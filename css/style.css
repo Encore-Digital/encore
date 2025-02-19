@@ -18,6 +18,9 @@
     font-weight: 500;
 }
 
+.logo-img{
+    max-width: 75% !important;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -91,9 +94,56 @@
     outline: none;
 }
 
+.navbar .navbar-nav .nav-link-white {
+    margin-right: 35px;
+    padding: 25px 0;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+}
+
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active  {
+    color: var(--bs-primary);
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before,
+.navbar-light .navbar-nav .nav-link.active::before {
+    width: calc(100% - 2px);
+    left: 1px;
+}
+
+.offer-section .nav a.accordion-link.active {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+}
+
+.offer-section .nav a.accordion-link.active h5 {
+    color: var(--bs-white);
+}
+
+.testimonial-carousel .owl-dots .owl-dot.active {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: var(--bs-secondary);
+    transition: 0.5s;
+}
+
+.offer-section .nav a.accordion-link {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    background: var(--bs-white);
+    transition: 0.5s;
 }
 
 .navbar .dropdown-toggle::after {
