@@ -396,6 +396,9 @@
     bottom: -1.5rem;
 }
 
+.service-img img {
+    width: 100%;
+}
 
 /*** Project ***/
 .project-item {
