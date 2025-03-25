@@ -320,6 +320,10 @@
     color: var(--light);
 }
 
+.bg-banner-web {
+    background-image: url(../img/banner_desarrollo_web.jpg) !important;
+
+}
 
 /*** Features ***/
 .feature-row {
