@@ -352,19 +352,19 @@
                         <div class="col-sm-6">
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="nombres" placeholder="Nombres">
-                                <label for="nombres">Nombre</label>
+                                <label name="nombres">Nombre</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
                                 <input type="email" class="form-control" id="correo" placeholder="Your Email">
-                                <label for="correo">Correo</label>
+                                <label name="correo">Correo</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="numero" placeholder="Your Mobile">
-                                <label for="numero">Telefono</label>
+                                <label name="numero">Telefono</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
