@@ -34,27 +34,49 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style2.css" rel="stylesheet">
-
-  
+    <script>
+        function validarFormulario() {
+            let nombres = document.forms["contacto"]["nombres"].value;
+            let correo = document.forms["contacto"]["correo"].value;
+            let numero = document.forms["contacto"]["numero"].value;
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let phoneRegex = /^\d{9,15}$/;
+            
+            if (nombres.trim() === "") {
+                alert("Por favor, ingresa tu nombre.");
+                return false;
+            }
+            if (!emailRegex.test(correo)) {
+                alert("Por favor, ingresa un correo válido.");
+                return false;
+            }
+            if (!phoneRegex.test(numero)) {
+                alert("Por favor, ingresa un número de teléfono válido (solo números, mínimo 9 dígitos).");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YH6XYQH83K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YH6XYQH83K"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-YH6XYQH83K');
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    gtag('config', 'G-YH6XYQH83K');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NB263WTZ');</script>
     <!-- End Google Tag Manager -->
 
-<!-- Google tag (gtag.js) event - delayed navigation helper -->
-<script>
+    <!-- Google tag (gtag.js) event - delayed navigation helper -->
+    <script>
     // Helper function to delay opening a URL until a gtag event is sent.
     // Call it in response to an action that should navigate to a URL.
     function gtagSendEvent(url) {
@@ -70,7 +92,7 @@
       });
       return false;
     }
-  </script>    
+    </script>    
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -313,30 +335,47 @@
         </div>
         <!-- FAQs End -->
 
-<div class="container-xxl rounded bg-dark pt-5 pb-5 wow zoomInDown" data-wow-delay="0.1s" style="animation-delay: 0.1s; animation-name: zoomInDown;">
-    <div class="container-fluid pb-5> 
-        <div class="container pb-5 pt-5">
-            <div class="banner-item">               
-                <div class="banner-content">
-                    <h1 class="text-white">¿Listo para llevar tu negocio al siguiente nivel?</h1>
-                        <h2 class="text-white mb-4">Trabajemos juntos</h2>
-                        <div class="d-flex pb-3 align-items-center">
-                            <i class="fas fa-envelope text-primary me-3"></i>
-                            <h5 class="text-white mb-0">consultas@encoredigitalperu.com</h5>
-                        </div>
-                        <div class="d-flex pb-3 align-items-center">
-                            <i class="fa fa-phone-alt text-primary me-3"></i>
-                            <h5 class="text-white mb-0">978 266 689</h5>
-                        </div>
-                        </div>
+<div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <p class="fs-5 fw-medium text-primary">Escribenos Ahora</p>
+                    <h1 class="display-5 mb-4">¿Listo para llevar tu negocio al siguiente nivel?</h1>
                     <div class="banner-btn">
                         <a href="https://wa.link/qeaey2" id="wsp_web_2" class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2">WhatsApp</a>
                     </div>
                 </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h2 class="mb-4">Obtenga una cotización gratuita</h2>
+                    <form name="contacto" action="procesar.php" method="POST" onsubmit="return validarFormulario()">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="nombres" placeholder="Nombres">
+                                <label for="nombres">Nombre</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="correo" placeholder="Your Email">
+                                <label for="correo">Correo</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="numero" placeholder="Your Mobile">
+                                <label for="numero">Telefono</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 <!-- Project Start -->
 <div class="container-xxl pt-5">
         <h1 class="display-5 mb-5 text-center pb-5">Conoce nuestros principales proyectos</h1>
