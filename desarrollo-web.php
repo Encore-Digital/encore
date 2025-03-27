@@ -351,20 +351,20 @@
                     <div class="row g-3">
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="nombres" placeholder="Nombres">
-                                <label name="nombres">Nombre</label>
+                                <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres">
+                                <label for="nombres">Nombre</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="correo" placeholder="Your Email">
-                                <label name="correo">Correo</label>
+                                <input type="email" class="form-control" id="correo" name="correo" placeholder="Your Email">
+                                <label for="correo">Correo</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="numero" placeholder="Your Mobile">
-                                <label name="numero">Telefono</label>
+                                <input type="text" class="form-control" id="numero" name="numero" placeholder="Your Mobile">
+                                <label for="numero">Telefono</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
