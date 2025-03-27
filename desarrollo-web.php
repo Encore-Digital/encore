@@ -145,7 +145,7 @@
                             <a href="social-media" class="dropdown-item">Gestión de Redes Sociales</a>
                             <a href="branding" class="dropdown-item">Diseño Gráfico y Branding</a>
                             <!--<a href="produccion-multimedia" class="dropdown-item">Producción Multimedia</a> -->
-                            <a href="desarrollo-web" class="dropdown-item">Diseño y Desarrollo Web</a>
+                            <a href="desarrollo-web.php" class="dropdown-item">Diseño y Desarrollo Web</a>
                         </div>
                     </div>
                     <!-- <a href="portafolio" class="nav-item nav-link">Portafolio</a>-->
@@ -457,7 +457,7 @@
                     <a class="btn btn-link" href="social-media.html">Gestión de Redes Social</a>
                     <a class="btn btn-link" href="branding.html">Diseño Gráfico y Branding</a>
                     <a class="btn btn-link" href="produccion-multimedia.html">Producción Multimedia</a>
-                    <a class="btn btn-link" href="desarrollo-web.html">Diseño y Desarrollo Web</a>
+                    <a class="btn btn-link" href="desarrollo-web.php">Diseño y Desarrollo Web</a>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <a href="index.html" class="navbar-brand">
