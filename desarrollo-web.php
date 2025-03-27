@@ -368,7 +368,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                            <button class="btn btn-primary w-100 py-3" id="enviar_formulario" type="submit">Enviar</button>
                         </div>
                     </div>
                     </form>
