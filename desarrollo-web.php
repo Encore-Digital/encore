@@ -385,9 +385,9 @@
         <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
             <div class="project-item mb-5">
                 <div class="position-relative">
-                    <img class="img-fluid" src="img/web1.jpg" alt="">
+                    <img class="img-fluid" src="img/web2.jpg" alt="">
                     <div class="project-overlay">
-                        <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/web1.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/web2.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-light rounded-circle m-1" href="https://certiperu.com/"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
@@ -398,9 +398,9 @@
             </div>
             <div class="project-item mb-5">
                 <div class="position-relative">
-                    <img class="img-fluid" src="img/web2.jpg" alt="">
+                    <img class="img-fluid" src="img/web1.jpg" alt="">
                     <div class="project-overlay">
-                        <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/web2.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/web1.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-light rounded-circle m-1" href="https://delcorb.com/"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
